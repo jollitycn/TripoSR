@@ -70,6 +70,12 @@ def generate(image, mc_resolution, formats=["obj", "glb"]):
     return rv
 
 
+# def submitButton(image_pil):
+#     preprocessed = preprocess(image_pil, False, 0.9)
+#     mesh_name_obj, mesh_name_glb = generate(preprocessed, 256, ["obj", "glb"])
+#     return preprocessed, mesh_name_obj, mesh_name_glb
+
+
 def run_example(image_pil):
     preprocessed = preprocess(image_pil, False, 0.9)
     mesh_name_obj, mesh_name_glb = generate(preprocessed, 256, ["obj", "glb"])

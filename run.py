@@ -67,7 +67,7 @@ parser.add_argument(
     "--mc-resolution",
     default=256,
     type=int,
-    help="Marching cubes grid resolution. Default: 256"
+    help="Marching cubes grid resolution. Default: 256 to 320 or more?"
 )
 parser.add_argument(
     "--no-remove-bg",
@@ -78,7 +78,7 @@ parser.add_argument(
     "--foreground-ratio",
     default=0.85,
     type=float,
-    help="Ratio of the foreground size to the image size. Only used when --no-remove-bg is not specified. Default: 0.85",
+    help="Ratio of the foreground size to the image size. Only used when --no-remove-bg is not specified. Default: 0.85 to 1.0",
 )
 parser.add_argument(
     "--output-dir",

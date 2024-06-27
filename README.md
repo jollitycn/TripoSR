@@ -34,7 +34,13 @@ The model is released under the MIT license, which includes the source code, pre
 
 ### Manual Inference
 ```sh
-python run.py examples/human.jpeg --no-remove-bg --render --output-dir output/
+python run.py examples/human.jpeg --foreground-ratio 1.0 --output-dir output/
+python run.py examples/goku.jpeg --foreground-ratio 0.85 --output-dir output/
+python run.py examples/goku.webp --foreground-ratio 0.85 --output-dir output/
+python run.py examples/goku.webp --foreground-ratio 1.0 --model-save-format glb --output-dir output/glb/
+
+#--no-remove-bg some trouble when use
+#--render
 ```
 This will save the reconstructed 3D model to `output/`. You can also specify more than one image path separated by spaces. The default options takes about **6GB VRAM** for a single image input.
 
